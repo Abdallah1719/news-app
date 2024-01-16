@@ -21,5 +21,6 @@ class NewsService {
       articallist.add(articalModel);
     }
     return articallist;
-  }
+  } 
+  
 }
