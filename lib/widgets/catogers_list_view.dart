@@ -8,15 +8,15 @@ class CatogersListView extends StatelessWidget {
   });
   final List<CategoryModel> categores = const [
     CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
-    CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
-    CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
-    CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
-    CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
-    CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
-    CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
-    CategoryModel(image: 'assets/business.avif', categoryname: 'Business'),
+    CategoryModel(
+        image: 'assets/entertaiment.avif', categoryname: 'Entertainment'),
+    CategoryModel(image: 'assets/general.avif', categoryname: 'General'),
+    CategoryModel(image: 'assets/health.avif', categoryname: 'Health'),
+    CategoryModel(image: 'assets/science.avif', categoryname: 'Science'),
+    CategoryModel(image: 'assets/sports.avif', categoryname: 'Sports'),
+    CategoryModel(image: 'assets/technology.jpeg', categoryname: 'Technology'),
   ];
-   
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
