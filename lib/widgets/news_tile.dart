@@ -10,18 +10,17 @@ class NewsTile extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(6),
-          child: Image.network(
-            articalModel.image!,
-            height: 200,
-            width: double.infinity,
-            fit: BoxFit.cover,
+        if (articalModel.image != null)
+          ClipRRect(
+            borderRadius: BorderRadius.circular(6),
+            child: Image.network(
+              articalModel.image!,
+              height: 200,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
-        SizedBox(
-          height: 12,
-        ),
+        SizedBox(height: 12),
         Text(
           articalModel.title,
           maxLines: 2,
@@ -32,9 +31,7 @@ class NewsTile extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
-        SizedBox(
-          height: 12,
-        ),
+        SizedBox(height: 12),
         Text(
           articalModel.subtitle ?? '',
           maxLines: 2,
